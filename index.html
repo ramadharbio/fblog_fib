@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>
+      Navin's Blog
+       </title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.js"></script>
+  
+    <style>
+            .carousel-inner > .item > img,
+            .carousel-inner > .item > a > img {
+              width: 70%;
+              margin: auto;
+            }
+            </style>
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+            <!--Create a button link to facebook page-->
+            <h1> Navin's Blog
+                <i class="fa fa-coffee" aria-hidden="true"></i>
+            <a class="btn-danger btn" id="facebook_button" href="https://www.facebook.com/navi2blog" role="button"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </h1>
+            <!--Style the button using css-->
+            <style>
+                #facebook_button {
+                    border-block-end-color: black;
+                    color:rgba(9, 9, 196, 0.945);
+                    padding-top: 20 px;
+                    align-items: center;
+                    size: 20 em;
+                }
+
+            </style>
+
+            </div>
+            
+            </div>
+        </div>
+    </div>
+    <div id = "word">
+        <div class="col-lg-1-12">
+          
+                  <style>
+          #word {
+            text-align: center;
+            padding: 5 em;
+            border-block-start-width: 5 px;
+
+          }
+        </style>
+        <hr></hr>
+        <h1>Patterns in Nature</h1>
+        <p>Recognize any? </p>
+      </div>
+         </div>
+    <!--Carousel-->
+    <div class="container">
+            <br>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+              </ol>
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+          
+                <div class="item active">
+                    <!--addition of an automation image from pixbay-->
+                  <img src= "https://images.unsplash.com/photo-1516434233442-0c69c369b66d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="air plane" width="460" height="345">
+                  <div class="carousel-caption">
+                    <h3 id = jet >Patterns in Nature</h3>
+                    <p id = jet >Take another look</p>
+                    <style>
+                      #jet {
+                        color: rgb(243, 247, 12);
+                      
+                      }
+                    </style>
+                  </div>
+                </div>
+          
+                <div class="item">
+                    <!--addition of an automation image from pixbay-->
+                  <img src="https://images.unsplash.com/photo-1530339775658-cbbb45c75d9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="senses" width="460" height="345">
+                  <div class="carousel-caption">
+                    <h3>L-Systems</h3>
+                    <p id = jet >A development pattern</p>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <!--addition of an automation image from pixbay-->  
+                  <img src="https://images.unsplash.com/photo-1536613562388-150f1185accb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="crossroads" width="460" height="345">
+                  <div class="carousel-caption">
+                    <h3>Fractals</h3>
+                    <p>Infinity and beyond</p>
+                  </div>
+                </div>
+          
+                <div class="item">
+                   <!--addition of an automation image from pixbay-->   
+                  <img src="https://images.unsplash.com/photo-1529186353910-c6900fabf8f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Football score" width="460" height="345">
+                  <div class="carousel-caption">
+                    <h3>Fibonnaci Series</h3>
+                    <p>The numbers game</p>
+                  </div>
+                </div>
+            
+              </div>
+          
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="jumbotron">
+            <h1 class="display-3">L-systems</h1>
+            <p class="lead">Jumbo helper text</p>
+            <hr class="my-2">
+            <p>More info</p>
+            
+            
+            <img id = "Lsystem" src="https://images.unsplash.com/photo-1539184110934-9e3bea83f601?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=780&q=80" width = 500 height = 350 alt="A snail shell"> A snail with a hard shell</img>
+            <style>
+              #Lsystem{
+                margin: 10px;
+                position: relative;
+                border: 2px solid rgb(22, 1, 1);
+                bottom: 3px;
+                left: 8px;
+                font-size: 12px;
+              }          
+            </style>
+          <div id="draw">
+            <style>
+              #draw{
+                position: relative;
+                
+              }
+            
+            </style>
+            <!--<canvas
+              id="draw" width="300" height="150" style="border:2px solid rgb(22, 1, 1);">
+            </canvas>-->
+
+            <script>
+              $(function() {
+
+                
+                var paper = Raphael("draw", 1500, 1000, 1000, 1000);
+
+                
+              
+
+                var c = paper.circle(100, 50, 50);
+                c.attr({
+                  fill: 'red',
+                  cursor: 'pointer'
+
+                });
+
+              });
+              
+
+              
+
+
+
+
+
+                //}, false);
+
+              //}(document));
+
+
+            </script>
+
+          </div>
+
+          
+          </div>
+
+          
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
