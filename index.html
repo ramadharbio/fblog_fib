@@ -143,15 +143,17 @@
           </div>
 
           <hr>
-
+        <div id = "L-Systems" class="col-lg-12">
           <div class="jumbotron">
             <h1 class="display-3">L-systems</h1>
-            <p class="lead">Jumbo helper text</p>
+            <p class="lead">A L-system is a developmental progression with written rules</p>
             <hr class="my-2">
-            <p>More info</p>
+            <p>In 1968 the biologist Aristid Lindenmayer proposed a rewriting model to explain development systems
+
+              It is a system that allows for self organization. The biological code is a reusable representation</p>
             
             
-            <img id = "Lsystem" src="https://images.unsplash.com/photo-1539184110934-9e3bea83f601?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=780&q=80" width = 500 height = 350 alt="A snail shell"> A snail with a hard shell</img>
+            <img id = "Lsystem" src="https://images.unsplash.com/photo-1539184110934-9e3bea83f601?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=780&q=80" width = 300 height = 275 alt="A snail shell"></img>
             <style>
               #Lsystem{
                 margin: 10px;
@@ -160,9 +162,13 @@
                 bottom: 3px;
                 left: 8px;
                 font-size: 12px;
-              }          
+              } 
+
+
+        </div>   
+
             </style>
-          <div id="draw">
+          <div id="L-Systems">
             <style>
               #draw{
                 position: relative;
@@ -175,38 +181,85 @@
             </canvas>-->
 
             <script>
-              $(function() {
-
-                
-                var paper = Raphael("draw", 1500, 1000, 1000, 1000);
-
-                
               
 
-                var c = paper.circle(100, 50, 50);
-                c.attr({
-                  fill: 'red',
-                  cursor: 'pointer'
+                
+                var paper = Raphael('L-System', 1500, 1000, 1000, 1000);
+                //var rectangle = paper.rect(300, 200, 150, 150);
+                
+                paper.image("https://images.unsplash.com/photo-1533177243638-dd485701f717?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=749&q=80", 15, 15, 765, 620);
 
+                //var circle = paper.circle(100, 100, 60);
+                //circle.attr({fill: 'r(0.1, 0.5)#fff-pink', 'fill-opacity': 0.9});
+
+                var text1 = paper.text(30, 30, 'This is an L-system');
+                text1.attr({
+                  'text-anchor': 'start',
                 });
 
-              });
-              
+                var text2 = paper.text(200, 200, 'The expanding circle highlights the spiral feature of the shell');
+                text2.attr({
+                  'text-anchor': 'start',
+                });
 
-              
+                var group = paper.set(text1, text2);
+                group.attr({
+                  'font-size': 23,
+                  'font-family': 'serif'
+                  
+                });
 
+                
 
+                var circle = paper.circle(310, 340, 15).attr({
+                  fill: '#4b42f4', cursor: 'pointer,', 'fill-opacity': 0.4
+                });
 
+                circle.animate({
+                  
+                  r:80
 
+                }, 50000);
 
-                //}, false);
-
-              //}(document));
+                
 
 
             </script>
 
           </div>
+
+          <div id = "fractal" class="col-lg-12">
+            <div class="jumbotron">
+              <h1 class="display-3">Fractal</h1>
+              <p class="lead">Jumbo helper text</p>
+              <p>More info</p>
+
+            
+              
+            </div>
+
+        <script>
+
+          var paper = Raphael('fractal', 2500, 1000, 1000, 1000);
+          //var rectangle = paper.rect(300, 200, 150, 150);
+          var line = paper.path(['M', 300, 300, 'L', 300, 100]);
+          var lineCopy = line.clone();
+            lineCopy.transform("T 70 -170 r 45");
+            lineCopy.transfrom("T 70 170 r 180");
+
+           
+
+        </script>
+
+
+          </div>
+
+          <style>
+            #fractal{
+              padding-block-start: 56em
+            }
+          
+          </style>
 
           
           </div>
